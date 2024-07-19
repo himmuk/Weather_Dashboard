@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Container for the entire dashboard */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Section for current weather */
+.current-weather {
+    background-color: #bfdbfe; /* Light blue background */
+    padding: 1.5rem; /* Padding */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+/* Forecast title */
+.forecast-title {
+    font-size: 1.25rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    margin-top: 1.5rem; /* Top margin */
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem; /* Padding for smaller screens */
+    }
+
+    .forecast {
+        flex-direction: column; /* Stack forecast cards vertically on smaller screens */
+    }
+}
